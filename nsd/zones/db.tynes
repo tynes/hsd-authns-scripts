@@ -1,0 +1,26 @@
+$ORIGIN tynes.
+$TTL 7200
+
+; SOA
+
+@       IN      SOA          ns.tynes. hostmaster.domain.tld. (
+                                        2016020202 ; Serial
+                                        7200       ; Refresh
+                                        1800       ; Retry
+                                        1209600    ; Expire
+                                        86400 )    ; Minimum
+
+; NAMESERVERS
+
+@                   IN                NS                   ns.tynes.
+@                   IN                NS                   ns.tynes.
+
+; A RECORDS
+
+@                   IN                A                    127.0.1.1
+mark                IN                A                    127.0.1.2
+
+; TXT RECORDS
+
+lol                 IN                TXT                  "Important opinions go here"
+
