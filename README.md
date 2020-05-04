@@ -5,6 +5,23 @@ nameserver. It is necessary to set up an authoritative name
 server when using Handshake because if all records must be
 placed on chain, it would not be scalable.
 
+## Requirements
+
+- [hsd](https://github.com/handshake-org/hsd)
+- Unix like operating system
+- Docker
+- `dig`
+
+If you are running on macOS, you will need to enable
+binding to the loopback address `127.0.1.1`. The DNS
+server listens on that address so that the user doesn't
+need to reconfigure their current DNS settings.
+
+```bash
+$ sudo ifconfig lo0 alias 117.0.1.1 up`
+```
+
+
 ## Demo
 
 Make sure to be running `hsd` in `regtest`
