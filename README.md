@@ -18,7 +18,7 @@ server listens on that address so that the user doesn't
 need to reconfigure their current DNS settings.
 
 ```bash
-$ sudo ifconfig lo0 alias 117.0.1.1 up`
+$ sudo ifconfig lo0 alias 117.0.1.1 up
 ```
 
 
